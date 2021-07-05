@@ -1,6 +1,10 @@
-* {
-    font-family: sans-serif;
+h1, h2, h3, h4, h6 {
+    font-family: Roboto Condensed;
 }
+p, a, h5, input, textarea ,button{
+    font-family: 'Open Sans',sans-serif;
+}
+
 .sidebar{
     width: 250px; 
     position: fixed; 
@@ -11,6 +15,14 @@
     top:0px;
     left: -250px;
     transition: 0.3s;
+}
+.sidebar > span{
+    color: white;
+    float: right; 
+    padding-right: 15px; 
+    padding-top: 5px; 
+    font-size: 36px; 
+    font-weight: 200;
 }
 .sidebar-show{
     left:0;
@@ -37,7 +49,9 @@ body{
 .logo{
     color: black;
     margin: 25px;
-    font-weight: 600;
+}
+.logo h1{
+    font-size: 20px;
 }
 .navbar-icon{
     float: right;
@@ -61,14 +75,12 @@ body{
 }
 .main-home-head{
     color: white;
-    font-size: 40px;
-    font-family: sans-serif;
+    font-size: 48px;
     font-weight: 600;
     /* letter-spacing: 2px;  */
 
-    transform: scaleY(1.1);
     max-width: 400px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 .main-disc{
     position: absolute;
@@ -81,22 +93,22 @@ body{
     position: absolute;
     right: 470px;
     top: 730px;
-    font-family: sans-serif;
 }
 .main-about h1{
     color: black;
-    font-size: 40px;
-    transform: scaleY(1.12);
+    font-size: 48px;
     font-weight: 600;
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 0px;
 
 }
 .main-about p{
-    color: rgb(73, 73, 73);
+    color: black;
     margin-left: 30px;
     margin-right: 30px;
     line-height: 1.5;
+    font-size: 1rem
 }
 .main-about .freepik{
     padding-bottom: 10px;
@@ -114,7 +126,9 @@ body{
     background-color: #CA6631;
     margin-left: 30px;
     margin-top: 0px;
-    padding: 10px 30px;
+    padding: 10px 40px;
+    letter-spacing: 1.5;
+    
 }
 .main-ring{
     border: 45px solid #CA6631;
@@ -132,7 +146,7 @@ body{
     margin-bottom: 60px;
 
 }
-.projects div{
+.projects > div{
     height: 100%;
     width: 100%; 
     max-height: 260px;
@@ -144,14 +158,12 @@ body{
 .projects .projects-title{
     color: white;
     background-color: black;
-    font-family: sans-serif;
 }
-.projects-title h1{
+.projects-title h2{
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
-    font-family: sans-serif;
-    transform: scaleY(1.2);
+    font-size: 36px;
 }
 .projects img{
     max-width: 260px;
@@ -162,15 +174,21 @@ body{
     color: white;
     text-align: center;
 }
+.projects-arch > h5{
+    font-size: 36px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    line-height: 1;
+}   
+
+.projects-arch img{
+    padding-top: 15px;
+}
 .projects-arch p{
     background-color: #CA6631;
     margin-left: 10px;
     margin-right: 10px;
 }
-.projects-arch img{
-    padding-top: 15px;
-}
-
 
 
 .planning{
@@ -184,7 +202,7 @@ body{
 }
 .planning-for{
     float: right;
-    padding-top: 30px;
+    padding-top: 10px;
     border: 10px solid #CA6631;
     position: absolute;
     right: 400px;
@@ -194,9 +212,8 @@ body{
     margin-top: 80px;
     width: 420px;
 }
-.planning-for h1{
-    font-size: 40px;
-    transform: scaleY(1.1);
+.planning-for > h1{
+    font-size: 48px;
 
 }
 .planning-for a{
@@ -217,6 +234,9 @@ body{
     padding-bottom: 70px;
     line-height: 1.5;
 
+}
+.planning-future > h2{
+    font-size: 30px;
 }
 
 
@@ -239,11 +259,10 @@ body{
 .agency{
     padding-top: 50px;
     max-width: 700px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .agency h1{
-    transform: scaleY(1.10);
-    /* letter-spacing: .6; */
+    font-size: 36px;
 }
 .agency-details{
         /* margin-bottom: 120px; */
@@ -258,9 +277,11 @@ body{
     margin-left: 5%;
 }
 
-.balance h3{
-    font-weight:unset;
+.balance h5{
+    font-size: 18;
     letter-spacing: 3px;
+    font-weight:lighter;
+
 } 
 .balance p{
     border-top: 10px solid #CA6631;
@@ -271,10 +292,11 @@ body{
     padding-right: 4px;
 
 }
-.garmony h3{
+.garmony h5{
     font-weight:lighter;
     padding-left: 18px;
     letter-spacing: 3px;
+    font-size: 18;
 
 }
 .garmony p{
@@ -300,7 +322,9 @@ body{
     text-decoration: none;
     color: white;
     background-color: #CA6631;
-    padding: 10px 30px;
+    padding: 10px 40px;
+    letter-spacing: 1.5;
+
 }
 .aboutus{
     margin-top: 450px;
@@ -329,15 +353,14 @@ body{
     background-color: #CA6631;
     /* display: inline-block; */
     float: left;
-    padding: 70px 115px 70px 35px;
+    padding: 55px 100px 55px 35px;
 
 
     /* height: ; */
 }
-.aboutus-details h2{
+.aboutus-details h1{
     color: white;
-    font-size: 35px;
-    transform: scaleY(1.15);
+    font-size: 50px;
     /* padding-top: 20px;
     padding-bottom: 20px; */
     
@@ -348,7 +371,7 @@ body{
     /* display: inline-block; */
     font-size: 16px;
     float: right;
-    max-width: 750px; 
+    max-width: 780px; 
     padding: 55px 35px;
     /* padding-left: 20px; */
     /* padding: auto; */
@@ -385,6 +408,7 @@ body{
     margin-left: 10px;
     padding-left: 30px;
     line-height: 1.5;
+    font-size: 16px;
 
 }
 .architects  i{
@@ -418,12 +442,12 @@ body{
 }
 .architects h1{
     max-width: 760px;
-    letter-spacing: 0.3px;
     padding-bottom: 35px;
+    font-size: 36;
     
 }
 .our-team{
-    height: 1170px;
+    height: 1220px;
     background-color: #292D33;
     position: relative;
     z-index: -2;
@@ -461,12 +485,13 @@ body{
 .our-team-col2{
     /* max-width: 1400px; */
     padding-top: 40px;
+    padding-bottom: 30px;
     color: white;
+    float: left;
 }
 .our-team-col2 h1{
     font-weight: 700;
-    transform: scaleY(1.15);
-    font-size: 39px;
+    font-size: 48px;
 
 }
 .our-team-col2 > p{
@@ -524,6 +549,7 @@ body{
 .social h3{
     display: flex;
     justify-content: center;
+    font-size: 24px;
 }
 .social > div{
     display: flex;
@@ -568,8 +594,7 @@ body{
 .contact-form h1{
     margin-top: 35px;
     margin-bottom: 40px;
-    transform: scaleY(1.15);
-    font-size: 30px;
+    font-size: 36px;
     margin-left: 50px;
 }
 .contact-form form{
@@ -588,6 +613,7 @@ body{
     border: 0px solid white;
     width: 100%;
     margin: 0px 0px 25px 0px;
+    font-size: 16px;
     padding-top: 15px;
     padding-left: 15px;
 

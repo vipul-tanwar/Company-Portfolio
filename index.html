@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-    <script src="script.js" ></script>
+    
     <title>Document</title>
 </head>
 <body>
 
     <div id="sideBar" class="sidebar" >
-        <span onclick="closeBar()"  href="javascript:void(0)" style="color: white; float: right; padding-right: 15px; padding-top: 5px; font-size: 36px; font-weight: 200;" >&times;</span>
+        <span onclick="closeBar()"  href="javascript:void(0)">&times;</span>
         <div>
             <a href="">Home Page</a>
             <a href="">About us</a>
@@ -31,7 +36,7 @@
                 <i class="socal-icon fa fa-envelope fa-lg"  ></i>
             </div>
             <div class="logo" >
-                LOGO
+                <h1>LOGO</h1>
             </div>
         </div>
     </div>
@@ -40,7 +45,7 @@
         <div class="container" >
             <div class="main-home">
                 <img class="main-home-img" width="540px" src="./images/home.jpg" alt="">
-                <p class="main-home-head">EXPERT, EFFICIENT, COLLABORATIVE. BUILD WITH EXPERIENCE</p>
+                <h1 class="main-home-head">EXPERT, EFFICIENT, COLLABORATIVE. BUILD WITH EXPERIENCE</h1>
                 <img class="main-disc" width="800px" src="./images/disc.jpg" alt="">
                 <div class="main-about">
                     <h1>ABOUT US</h1>
@@ -60,7 +65,7 @@
         <div class="container ">
             <div class="projects">
                 <div class="projects-title">
-                    <h1>OUR  PROJECTS</h1>
+                    <h2>OUR  PROJECTS</h2>
                 </div>
                 <div class=""><img src="./images/projects/proj1.PNG" alt=""></div>
                 <div ><img src="./images/projects/proj2.PNG" alt=""></div>
@@ -70,7 +75,7 @@
                 <div><img src=".//images/projects/proj6.PNG" alt=""></div>
                 <div class="projects-arch">
                     <img src="./images/comp.PNG" alt="">
-                    <h1>ARCHITECT URE</h1>
+                    <h5>ARCHITECT URE</h5>
                     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
                 </div>
             </div>
@@ -88,7 +93,7 @@
                     <p>Images from <a href="">Freepik</a></p>
                 </div>
                 <div class="planning-future">
-                    <h1>Future Cities</h1>
+                    <h2>Future Cities</h2>
                     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
                     
                 </div>
@@ -106,11 +111,11 @@
             </div>
             <div class="agency-details">
                 <div class="balance">
-                    <h3>BALANCE</h3>
+                    <h5>BALANCE</h5>
                     <p>Odio euismod lacinia at quis risus sed. At tellus at urna condimentum mattis pellentesque. Elit sed vulputate mi sit amet mauris commodo quis. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Nisl purus in mollis nunc sed id semper. Aliquam ut porttitor leo a diam. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
                 </div>
                 <div class="garmony" >
-                    <h3>GARMONY</h3>
+                    <h5>GARMONY</h5>
                     <p>Vel eros donec ac odio. Dolor sit amet consectetur adipiscing elit duis. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse. Phasellus vestibulum lorem sed risus. Eros donec ac odio tempor orci. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Cursus vitae congue mauris rhoncus aenean.</p>
                 </div>
                 <div class="agency-end">
@@ -125,7 +130,7 @@
         <!-- <img src="./images/building business steel.jpg" alt=""> -->
         <div class="aboutus-details">
             <div class="aboutus-head">
-                <h2>ABOUT US</h2>
+                <h1>ABOUT US</h1>
             </div>
             <div class="aboutus-body"> 
                 <p>Pharetra magna ac placerat vestibulum lectus mauris ultrices. Ut pharetra sit amet aliquam id diam maecenas ultricies mi. Sollicitudin ac orci phasellus egestas tellus rutrum. Venenatis cras sed felis eget. Amet risus nullam eget felis eget nunc. Lacus vestibulum sed arcu non odio euismod. Consectetur adipiscing elit duis tristique.</p>
@@ -190,7 +195,7 @@
                 <img class="team-img1" src="./images/office/office1.jpg"  alt="">
                 <img class="team-img2" src="./images/office/office3.jpg"  alt="">
             </div>
-            <div class="our-team-col2" style="    float: left;">   
+            <div class="our-team-col2">   
                 <h1>OUR TEAM</h1>
                 <p>Sample text. Sample text.Click to select the text box. Click again or double click to start editing the text</p>
                 <a href="">LEARN MORE</a>    
@@ -227,7 +232,7 @@
                 <br>
                 <input type="email" placeholder="Enter a valid email address" name="" id="">
                 <br>
-                <textarea placeholder="Enter your message" name="" id="" cols="30" rows="8"></textarea>
+                <textarea placeholder="Enter your message" name="" id="" cols="30" rows="5"></textarea>
                 <br>
                 <button class="">SUBMIT</button>
             </form>
@@ -247,5 +252,7 @@
             <p> Website is created by Vipul Tanwar  </p>
         </div>
     </div>
+    <script src="script.js" ></script>
+
 </body>
 </html>

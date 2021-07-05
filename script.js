@@ -1,6 +1,13 @@
+// function myBar() {
+//     document.getElementById("sideBar").classList.toggle("sidebar-show");
+// }
+// function closeBar(){
+//     document.getElementById("sideBar").classList.toggle("sidebar-show");
+// }
 function myBar() {
-    document.getElementById("sideBar").classList.toggle("sidebar-show");
+    sidebar.classList.toggle("sidebar-show");
 }
 function closeBar(){
-    document.getElementById("sideBar").classList.toggle("sidebar-show");
+    sidebar.classList.toggle("sidebar-show");
 }
+var sidebar = document.getElementById("sideBar");
